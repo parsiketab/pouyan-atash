@@ -1,0 +1,924 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-variant="C">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>حلقه طلایی پویان | کارگزاری پویان</title>
+<meta name="description" content="دوستات رو به کارگزاری پویان دعوت کن و توی قرعه‌کشی ۱۰ گرم طلای صندوق آتش شرکت کن.">
+<meta name="theme-color" content="#0D2A5B">
+<!-- ===== Google Tag Manager =====
+     فقط شناسه کانتینر را جایگزین GTM-XXXXXXX کنید. تا وقتی جایگزین نشود، چیزی لود نمی‌شود. -->
+<script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({ page_variant: 'C' });
+(function (id) {
+  if (!id || id.indexOf('XXXX') > -1) return;
+  window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtm.js?id=' + id;
+  document.head.appendChild(s);
+})('GTM-KF6TNSBT');
+</script>
+<!-- کلریتی از طریق تگ منیجر لود می‌شود -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&display=swap">
+<style>
+:root{
+  --navy:#0D2A5B; --navy-2:#0B4A78; --teal:#00C2B3; --teal-dark:#08625A; --teal-bg:#E6F8F6;
+  --gold:#E2B04A; --gold-dark:#6B4E10; --gold-bg:#FFF7E3;
+  --bg:#EEF3F8; --card:#FFFFFF; --line:#DCE4EE; --field:#F8FAFC;
+  --text:#0D2A5B; --muted:#4A5B78; --danger:#B42318;
+  --grad:linear-gradient(135deg,#0D2A5B 0%,#00C2B3 100%);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+.err:empty{display:none}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--navy)}
+button,input{font-family:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.wrap{max-width:480px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column}
+
+/* header */
+.top{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;min-height:64px;padding:10px 16px;background:#fff;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-height:44px}
+.brand-mark{width:40px;height:auto;display:block}
+.brand-word{height:22px;width:auto;display:block}
+.brand b{display:block;font-size:15px;font-weight:800;line-height:1.3}
+.brand small{display:block;font-size:11px;color:var(--muted)}
+.top-link{font-size:13px;font-weight:700;text-decoration:none;min-height:44px;display:inline-flex;align-items:center;padding:0 10px}
+.logout{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--navy);font-size:13px;font-weight:700}
+.logout:hover{border-color:var(--danger);color:var(--danger)}
+
+/* hero */
+.hero{background:linear-gradient(150deg,#0D2A5B 0%,#0B4A78 55%,#00C2B3 130%);color:#fff;padding:28px 20px 72px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:12px}
+.pill{font-size:12px;font-weight:700;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:6px 14px}
+.hero h1{margin:0;font-size:27px;font-weight:900;line-height:1.5}
+.hero p{margin:0;font-size:15px;line-height:1.9;color:#D6E6F2;max-width:340px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.chips span{font-size:12px;background:rgba(255,255,255,.12);border-radius:8px;padding:6px 10px}
+
+/* main card */
+.card{margin:-48px 16px 0;background:var(--card);border-radius:22px;box-shadow:0 12px 32px rgba(13,42,91,.14);padding:24px 20px;display:flex;flex-direction:column;gap:14px;position:relative}
+.card h2{margin:0;font-size:19px;font-weight:800}
+.card p.lead{margin:0;font-size:14px;color:var(--muted);line-height:1.85}
+label.l{font-size:13px;font-weight:700}
+.field{height:52px;width:100%;border:1.5px solid #CBD6E3;border-radius:14px;padding:0 16px;font-size:18px;letter-spacing:2px;text-align:left;direction:ltr;color:var(--navy);background:var(--field)}
+.field:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(0,194,179,.22)}
+.field.otp{height:56px;font-size:24px;letter-spacing:12px;text-align:center}
+.err{margin:0;font-size:13px;color:var(--danger);min-height:0}
+.btn{height:52px;width:100%;border:none;border-radius:14px;background:var(--navy);color:#fff;font-size:16px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:background .15s}
+.btn:hover{background:#12386F}
+.btn:disabled{opacity:.6;cursor:progress}
+.btn.ghost{background:#fff;color:var(--navy);border:1.5px solid var(--line)}
+.btn.ghost:hover{border-color:var(--navy)}
+.link-btn{min-height:44px;border:none;background:none;color:var(--navy);font-size:13px;font-weight:700;padding:0}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.muted{font-size:13px;color:var(--muted)}
+.note{display:flex;gap:10px;align-items:flex-start;background:var(--teal-bg);border-radius:14px;padding:12px 14px;font-size:13px;line-height:1.8}
+.note svg{flex-shrink:0;margin-top:2px}
+
+/* progress */
+.prog{display:flex;flex-direction:column;gap:8px}
+.prog-bar{height:6px;background:#E3EAF2;border-radius:99px;overflow:hidden}
+.prog-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#0D2A5B,#00C2B3);transition:width .3s}
+
+/* choice */
+.choice{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:center;gap:14px;width:100%;text-align:right;border:1.5px solid var(--line);border-radius:18px;background:#fff;padding:16px;color:var(--navy);transition:border-color .15s,box-shadow .15s}
+.opt:hover{border-color:var(--teal);box-shadow:0 6px 18px rgba(0,194,179,.14)}
+.opt.primary{background:linear-gradient(140deg,#0D2A5B,#0B4A78);color:#fff;border-color:transparent;min-height:104px;padding:20px 18px;border-radius:22px;box-shadow:0 0 0 3px rgba(243,210,122,.55),0 14px 30px rgba(13,42,91,.35)}
+.opt.primary:hover{box-shadow:0 0 0 3px #F3D27A,0 18px 36px rgba(13,42,91,.42);transform:translateY(-1px)}
+.opt.primary{gap:12px}
+.opt.primary b{font-size:16px;font-weight:900}
+.opt.primary .ic{width:46px;height:46px}
+@media (min-width:960px){.opt.primary{gap:16px}.opt.primary b{font-size:18px}.opt.primary .ic{width:54px;height:54px}}
+.opt .ic{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:var(--teal-bg)}
+.opt.primary .ic{background:rgba(255,255,255,.14)}
+.opt b{display:block;font-size:15px;font-weight:800;line-height:1.6}
+.opt small{display:block;font-size:12.5px;line-height:1.7;opacity:.85}
+.badge-100{margin-inline-start:auto;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:68px;padding:8px 8px;border-radius:16px;background:linear-gradient(160deg,#FFF1C2 0%,#F3D27A 45%,#D9A23A 100%);color:#3D2A05;box-shadow:0 6px 16px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.7);animation:pulse 2.2s ease-in-out infinite}
+.opt .badge-100 b{font-size:26px;font-weight:900;line-height:1.1;display:block}
+.opt .badge-100 small{font-size:11.5px;font-weight:800;opacity:1}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+
+/* contract */
+.contract-link{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:14px;font-weight:800;color:#0A6B8A;text-decoration:none;border-bottom:1.5px dashed rgba(10,107,138,.5)}
+.contract-link:hover{color:var(--navy);border-bottom-color:var(--navy)}
+.check{display:flex;gap:10px;align-items:center;font-size:14px;min-height:44px;cursor:pointer}
+.check input{width:20px;height:20px;accent-color:var(--navy)}
+
+/* done */
+.done{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;padding:4px 0}
+.done-ic{width:76px;height:76px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center}
+.plus100{font-size:40px;font-weight:900;background:linear-gradient(135deg,#B07D1E,#E2B04A);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.2}
+
+/* invite page */
+.hello{display:flex;gap:12px;align-items:center}
+.hello .ok{width:44px;height:44px;border-radius:50%;background:var(--teal-bg);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hello h2{font-size:18px;font-weight:900}
+.score{background:linear-gradient(140deg,#0D2A5B,#0B4A78);color:#fff;border-radius:20px;padding:22px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.score small{display:block;font-size:16px;font-weight:700;color:#E3EEF8}
+.score strong{display:block;font-size:52px;font-weight:900;line-height:1.25;color:#F3D27A}
+.score .coin{flex-shrink:0}
+.upsell{display:flex;align-items:center;gap:12px;background:var(--gold-bg);border:1px solid #F0D894;border-radius:16px;padding:12px 14px}
+.upsell p{margin:0;font-size:13px;line-height:1.7;color:var(--gold-dark);flex:1}
+.upsell p b{font-size:14px}
+.upsell button{flex-shrink:0;min-height:40px;border:none;border-radius:10px;background:var(--gold-dark);color:#fff;font-size:13px;font-weight:800;padding:0 12px}
+.sec-title{font-size:15px;font-weight:800;margin:0}
+.inv-form{display:flex;gap:8px}
+.inv-form .field{flex:1;min-width:0}
+.inv-form .btn{width:auto;padding:0 18px;flex-shrink:0;background:var(--teal);color:var(--navy)}
+.inv-form .btn:hover{background:#00AFA1}
+.linkbox{display:flex;gap:8px}
+.linkbox code{flex:1;min-width:0;direction:ltr;border:1.5px dashed #9FB3C9;border-radius:12px;padding:0 12px;font-family:inherit;font-size:13.5px;display:flex;align-items:center;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;background:var(--field);min-height:46px}
+.linkbox button{min-width:84px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--navy);font-size:13px;font-weight:800}
+.share{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.share a{min-height:46px;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;font-size:13px;font-weight:700}
+.divider{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--muted)}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--line)}
+.inv-list{display:flex;flex-direction:column;gap:8px;list-style:none;margin:0;padding:0}
+.inv-list li{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid #E3EAF2;border-radius:14px;padding:12px 14px}
+.inv-list .num{font-size:14px;font-weight:700;direction:ltr;text-align:right}
+.tag{display:inline-block;font-size:11px;font-weight:700;border-radius:6px;padding:2px 8px;margin-top:4px}
+.tag.sent{color:#3A4A66;background:#E8EEF6}
+.tag.half{color:var(--gold-dark);background:#FFF1CC}
+.tag.full{color:var(--teal-dark);background:#DDF6F3}
+.inv-list .pts{font-size:15px;font-weight:900;white-space:nowrap}
+.empty{border:1px dashed #CBD6E3;border-radius:14px;padding:18px;text-align:center;font-size:13px;color:var(--muted);line-height:1.9}
+
+/* sections */
+.sec{padding:32px 20px 4px;display:flex;flex-direction:column;gap:12px}
+.sec h2{margin:0;font-size:20px;font-weight:900}
+.step{display:flex;gap:14px;align-items:center;background:#fff;border-radius:16px;padding:14px 16px}
+.step .n{width:40px;height:40px;border-radius:12px;background:#E8EEF6;display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0}
+.step b{display:block;font-size:15px;font-weight:800}
+.step span.d{display:block;font-size:13px;color:var(--muted);line-height:1.7}
+.step .p{margin-inline-start:auto;font-size:15px;font-weight:900;color:var(--teal-dark);white-space:nowrap}
+.hint{margin:0;font-size:13px;color:var(--muted);line-height:1.9;background:#fff;border-radius:14px;padding:12px 16px}
+/* hero prizes */
+.gold-text{background:linear-gradient(180deg,#FFF1C2 0%,#F3D27A 45%,#E2B04A 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{padding:22px 16px 60px;gap:14px}
+.hero .pill{padding:4px 12px;font-size:11px}
+.hero h1{font-size:31px;line-height:1.5;letter-spacing:-.2px;text-shadow:0 2px 14px rgba(0,0,0,.25)}
+.hero h1 .gold-text{font-size:35px}
+.hero-prize{position:relative;width:100%;display:flex;align-items:center;gap:12px;padding:10px 14px 10px 16px;border-radius:18px;text-align:right;background:linear-gradient(120deg,rgba(255,255,255,.12),rgba(255,255,255,.04));border:1px solid rgba(243,210,122,.6);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 8px 24px rgba(5,20,50,.3)}
+.hp-txt{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}
+.hp-coin{width:64px;height:64px;flex-shrink:0;animation:float 3.6s ease-in-out infinite}
+.hp-count{flex-shrink:0;font-size:13px;font-weight:900;color:#3D2A05;background:linear-gradient(135deg,#FFF1C2,#E2B04A);border-radius:99px;padding:3px 14px;box-shadow:0 3px 10px rgba(5,20,50,.3)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:1;transform:scale(1)}}
+.hp-label{font-size:12px;font-weight:700;color:#F3D27A;letter-spacing:.2px}
+.hp-title{font-size:19px;font-weight:900;line-height:1.4;background:linear-gradient(180deg,#FFF6D6 0%,#F3D27A 60%,#E2B04A 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-subs{list-style:none;margin:6px 0 0;padding:0;width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.hero-subs li{position:relative;background:rgba(6,22,52,.45);border:1px solid rgba(243,210,122,.6);border-radius:14px;padding:16px 4px 8px;display:flex;flex-direction:column;align-items:center;gap:0}
+.hero-subs b{font-size:clamp(14px,4vw,17px);font-weight:900;color:#F3D27A;line-height:1.5;white-space:nowrap}
+.hs-name{font-size:15px;font-weight:800;color:#FFFFFF;line-height:1.6;margin-top:2px}
+.hs-ic{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;margin-bottom:2px;
+  background:radial-gradient(circle at 35% 30%,rgba(255,241,194,.35),rgba(226,176,74,.12));box-shadow:inset 0 0 0 1px rgba(243,210,122,.55)}
+.hs-ic svg{width:17px;height:17px;fill:none;stroke:#F3D27A;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.hs-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:12px;font-weight:800;color:var(--navy);background:#FFFFFF;border-radius:99px;padding:3px 12px;box-shadow:0 3px 10px rgba(5,20,50,.35)}
+
+/* prizes section */
+.prizes-sec .row h2{margin:0}
+.win-chip{font-size:12px;font-weight:800;color:#3D2A05;background:linear-gradient(135deg,#FBE3A0,#E2B04A);border-radius:99px;padding:5px 12px}
+.pz-main{position:relative;overflow:hidden;border-radius:24px;padding:22px 20px;display:flex;align-items:center;gap:16px;
+  background:linear-gradient(135deg,#FFF1C2 0%,#F3D27A 40%,#D9A23A 75%,#B07D1E 100%);color:#3D2A05;box-shadow:0 16px 34px rgba(176,125,30,.35)}
+.pz-main::after{content:"";position:absolute;top:0;bottom:0;width:60px;left:-80px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-20deg);animation:shine 3.5s ease-in-out infinite}
+@keyframes shine{0%,60%{left:-80px}100%{left:110%}}
+.pz-ribbon{position:absolute;top:14px;left:-34px;transform:rotate(-45deg);background:var(--navy);color:#fff;font-size:11px;font-weight:800;padding:4px 40px}
+.pz-coin{width:112px;height:112px;flex-shrink:0;filter:drop-shadow(0 8px 14px rgba(110,70,10,.4))}
+.pz-main-txt strong{display:block;font-size:24px;font-weight:900;line-height:1.45}
+.pz-main-txt .pz-count{display:inline-block;margin-top:8px;background:var(--navy);color:#fff}
+.pz{display:flex;align-items:center;gap:14px;border-radius:20px;padding:16px;box-shadow:0 8px 20px rgba(13,42,91,.08)}
+.pz-ic{width:60px;height:60px;border-radius:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.pz-txt{display:flex;flex-direction:column;flex:1;min-width:0}
+.pz-val{font-size:30px;font-weight:900;line-height:1.25}
+.pz-val small{font-size:15px;font-weight:800}
+.pz-txt span{font-size:14px;font-weight:700}
+.pz-count{flex-shrink:0;font-size:12px;font-weight:800;border-radius:99px;padding:5px 12px}
+.pz-gold{background:var(--gold-bg);border:1.5px solid #F0D894}
+.pz-gold .pz-ic{background:linear-gradient(135deg,#FBE3A0,#E2B04A)}
+.pz-gold .pz-val,.pz-gold .pz-txt span{color:#6B4E10}
+.pz-gold .pz-count{background:#6B4E10;color:#fff}
+.pz-teal{background:#E6F8F6;border:1.5px solid #9DE5DD}
+.pz-teal .pz-ic{background:#BFF0EA}
+.pz-teal .pz-val,.pz-teal .pz-txt span{color:var(--teal-dark)}
+.pz-teal .pz-count{background:var(--teal-dark);color:#fff}
+.pz-navy{background:linear-gradient(135deg,#0D2A5B,#0B4A78);color:#fff}
+.pz-navy .pz-ic{background:rgba(255,255,255,.14)}
+.pz-navy .pz-txt span{color:#D6E6F2}
+.pz-navy .pz-count{background:var(--teal);color:var(--navy)}
+.faq-wrap{background:none!important;border-radius:0!important;overflow:visible!important}
+.faq .faq-toggle{min-height:68px;justify-content:flex-start;gap:14px;padding:12px 16px;background:#fff;border:1.5px solid #C9D6E6;border-radius:18px;color:var(--navy);box-shadow:0 6px 18px rgba(13,42,91,.08);transition:border-color .15s,box-shadow .15s,transform .15s}
+.faq .faq-toggle::after{display:none}
+.faq .faq-toggle:hover{border-color:var(--teal);box-shadow:0 10px 24px rgba(0,194,179,.18);transform:translateY(-1px)}
+.fq-ic{width:42px;height:42px;border-radius:12px;background:var(--grad);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;flex-shrink:0}
+.fq-txt{display:flex;flex-direction:column;flex:1;text-align:right}
+.fq-txt b{font-size:16px;font-weight:900}
+.fq-txt small{font-size:12px;font-weight:500;color:var(--muted)}
+.fq-chev{width:36px;height:36px;border-radius:50%;background:var(--teal-bg);flex-shrink:0;position:relative;transition:transform .2s}
+.fq-chev::before{content:"";position:absolute;left:50%;top:50%;width:9px;height:9px;border:solid var(--teal-dark);border-width:0 2.5px 2.5px 0;transform:translate(-50%,-70%) rotate(45deg)}
+.faq .faq-wrap[open] .fq-chev{transform:rotate(180deg)}
+.faq .faq-wrap[open]>.faq-toggle .fq-txt small{visibility:hidden}
+.faq-list{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.faq-list details{background:#fff;border-radius:16px;overflow:hidden}
+.faq summary{list-style:none;min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;font-size:14px;font-weight:800;line-height:1.7;cursor:pointer}
+.faq summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"+";font-size:22px;font-weight:500;color:var(--navy);flex-shrink:0;transition:transform .2s}
+.faq-list details[open] summary::after{transform:rotate(45deg);color:#0A6B8A}
+.faq details p{margin:0;padding:0 16px 16px;font-size:13px;line-height:2;color:#2B3D5C}
+.rules{margin:0;font-size:12px;line-height:2.1;color:var(--muted);padding-inline-start:18px}
+.foot{margin-top:32px;background:var(--navy);color:#fff;padding:28px 20px 36px;display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center}
+.social{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.social a{min-width:92px;height:48px;border-radius:14px;padding:0 14px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;text-decoration:none;font-size:13px;font-weight:700;transition:background .15s}
+.social a:hover{background:rgba(0,194,179,.35)}
+.call{display:flex;align-items:center;gap:12px;background:var(--teal);color:var(--navy);text-decoration:none;border-radius:16px;padding:10px 20px;min-height:56px}
+.call:hover{background:#00AFA1}
+.call span{display:flex;flex-direction:column;text-align:right}
+.call small{font-size:11.5px;font-weight:700}
+.call b{font-size:16px;font-weight:500;letter-spacing:.5px}
+.step-hl{border:1.5px solid #F0D894;background:var(--gold-bg)}
+.step-hl .n{background:linear-gradient(135deg,#FBE3A0,#E2B04A);color:#3D2A05}
+.step-hl .p{color:#8A5F10}
+.foot .meta{display:flex;flex-direction:column;gap:4px;font-size:12px;color:#C9DBEA;line-height:1.9}
+.foot .meta a{color:#fff;font-weight:700}
+.foot .meta a.tel{color:#C9DBEA;font-weight:400;text-decoration:none}
+
+/* toast */
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,120px);background:var(--navy);color:#fff;border-radius:14px;padding:12px 18px;font-size:14px;font-weight:700;box-shadow:0 10px 30px rgba(13,42,91,.3);transition:transform .25s;z-index:50;max-width:calc(100% - 32px);text-align:center}
+.toast.show{transform:translate(-50%,0)}
+.toast:empty{display:none}
+.spin{width:18px;height:18px;border:2.5px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.score strong.bump{animation:bump .7s ease}
+@keyframes bump{0%{transform:scale(1)}35%{transform:scale(1.25);color:#F3D27A}100%{transform:scale(1)}}
+.inv-list li.flash{animation:flash 1.6s ease}
+@keyframes flash{0%{background:#DDF6F3;border-color:var(--teal)}100%{background:#fff}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.coin-img{border-radius:50%;background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgMTIwIj4KPGRlZnM+CjxyYWRpYWxHcmFkaWVudCBpZD0iYmciIGN4PSIuMzUiIGN5PSIuMyIgcj0iLjg1Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRkY2RDIiLz48c3RvcCBvZmZzZXQ9Ii41NSIgc3RvcC1jb2xvcj0iI0VCQzE1RSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0E5NzMxQSIvPjwvcmFkaWFsR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iYmFyIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRkZGM0M0Ii8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iI0U1QjI0QSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0IwN0QxRSIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0idG9wIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMCI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRkZGOERFIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRjBDOTY2Ii8+PC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8Y2lyY2xlIGN4PSI2MCIgY3k9IjYwIiByPSI1OCIgZmlsbD0idXJsKCNiZykiLz4KPGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNTEiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRjNDQyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1kYXNoYXJyYXk9IjIgNCIgb3BhY2l0eT0iLjkiLz4KPGcgc3Ryb2tlPSIjOEU1RjEyIiBzdHJva2Utd2lkdGg9IjEuMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CjxwYXRoIGQ9Ik0zMCA3OCBMMzggNjIgSDY2IEw3NCA3OCBaIiBmaWxsPSJ1cmwoI2JhcikiLz48cGF0aCBkPSJNMzggNjIgSDY2IEw2NCA1OCBINDAgWiIgZmlsbD0idXJsKCN0b3ApIi8+CjxwYXRoIGQ9Ik01MCA3OCBMNTggNjIgSDg2IEw5NCA3OCBaIiBmaWxsPSJ1cmwoI2JhcikiLz48cGF0aCBkPSJNNTggNjIgSDg2IEw4NCA1OCBINjAgWiIgZmlsbD0idXJsKCN0b3ApIi8+CjxwYXRoIGQ9Ik00MCA2MCBMNDggNDQgSDc2IEw4NCA2MCBaIiBmaWxsPSJ1cmwoI2JhcikiLz48cGF0aCBkPSJNNDggNDQgSDc2IEw3NCA0MCBINTAgWiIgZmlsbD0idXJsKCN0b3ApIi8+CjwvZz4KPHRleHQgeD0iNjAiIHk9Ijk4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkaXJlY3Rpb249InJ0bCIgdW5pY29kZS1iaWRpPSJlbWJlZCIgZm9udC1mYW1pbHk9IlZhemlybWF0bixUYWhvbWEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9IjkwMCIgZmlsbD0iIzVBM0IwNSI+27HbsCDar9ix2YU8L3RleHQ+Cjwvc3ZnPg==) center/cover no-repeat;box-shadow:0 0 0 2px rgba(255,236,170,.55),0 8px 18px rgba(0,0,0,.35)}
+
+/* points extras */
+.note{display:flex;gap:10px;align-items:flex-start;background:#EEF3F8;border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.note p{margin:0;font-size:13px;line-height:1.9;color:#2B3D5C}
+.note svg{flex-shrink:0;margin-top:3px}
+
+/* ================= desktop ================= */
+@media (min-width:960px){
+  .wrap{max-width:none}
+  .top{padding:12px max(32px,calc((100vw - 1160px)/2))}
+  .brand-mark{width:46px}.brand-word{height:26px}
+  .stage{display:grid;grid-template-columns:520px minmax(0,1fr);gap:64px;align-items:center;
+    padding:56px max(32px,calc((100vw - 1160px)/2)) 64px;
+    background:linear-gradient(150deg,#0D2A5B 0%,#0B4A78 55%,#00C2B3 130%)}
+  .hero{background:none;padding:0;align-items:stretch;text-align:right;gap:22px}
+  .hero h1{line-height:1.45}
+  .hero-prize{padding:16px 22px;max-width:560px}
+  .hp-coin{width:92px;height:92px}
+  .hp-title{font-size:26px}
+  .hero-subs{max-width:560px;gap:12px}
+  .hero-subs li{padding:20px 8px 12px}
+  .hero-subs b{font-size:22px}
+  .hs-name{font-size:17px}
+  .card{order:-1;margin:0;align-self:center;padding:40px 40px 36px;border-radius:28px;gap:18px;
+    box-shadow:0 0 0 6px rgba(243,210,122,.35),0 30px 70px rgba(3,15,40,.5)}
+  .card::before{content:"";position:absolute;top:0;right:40px;left:40px;height:5px;border-radius:0 0 6px 6px;background:linear-gradient(90deg,#E2B04A,#FBE3A0,#E2B04A)}
+  .card h2{font-size:26px}
+  .card p.lead{font-size:15.5px}
+  .card label.l{font-size:14px}
+  .card .field{height:60px;font-size:21px}
+  .card .field.otp{height:64px;font-size:28px}
+  .card .btn{height:60px;font-size:18px}
+  .hero h1{font-size:40px}
+  .hero h1 .gold-text{font-size:46px}
+  .duo{display:block;max-width:1160px;margin:0 auto;padding:16px 32px 0}
+  .duo .sec{padding:44px 0 0}
+  .how{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .how h2,.how .hint{grid-column:1/-1}
+  .how .step{flex-direction:column;align-items:flex-start;gap:10px;padding:18px;position:relative;height:100%}
+  .how .step .p{position:absolute;top:18px;left:18px;margin:0;font-size:18px}
+  .prizes-sec{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+  .prizes-sec>h2,.prizes-sec>p,.prizes-sec>.pz-main{grid-column:1/-1}
+  .pz-main{padding:26px 32px;justify-content:center}
+  .pz{flex-direction:column;align-items:flex-start;padding:20px}
+  .pz .pz-count{align-self:flex-start}
+  .sec h2{font-size:24px}
+  .faq,#rules{max-width:1160px;margin:0 auto;width:100%;padding-inline:32px}
+  .faq .faq-toggle{max-width:520px;margin:0 auto}
+  .faq-list{display:grid;grid-template-columns:1fr 1fr;align-items:start}
+  .foot{margin-top:48px;flex-direction:row;flex-wrap:wrap;justify-content:space-between;text-align:right;padding:28px max(32px,calc((100vw - 1160px)/2))}
+  .foot .meta{flex-direction:row;gap:20px;align-items:center}
+  .toast{bottom:32px}
+}
+@media (min-width:1280px){ .hero h1{font-size:44px} .hero h1 .gold-text{font-size:50px} }
+.warn{display:flex;gap:10px;align-items:flex-start;background:var(--gold-bg);border:1px solid #F0D894;border-radius:14px;padding:12px 14px}
+.warn p{margin:0;font-size:13px;line-height:1.9;color:#5A410C}
+.warn svg{flex-shrink:0;margin-top:2px}
+.sms-left{font-size:12px;font-weight:700;color:var(--teal-dark);background:var(--teal-bg);border-radius:99px;padding:3px 10px;white-space:nowrap}
+.sms-left.none{color:var(--danger);background:#FDECEA}
+.inv-form .field:disabled,.inv-form .btn:disabled{opacity:.5;cursor:not-allowed}
+
+/* ---- gift ---- */
+.bar-ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.hero .gift-strip{margin:-6px 0 0;color:#3D2A05;line-height:1.6;max-width:100%;text-align:center;border-radius:18px!important;display:inline-flex;align-items:center;gap:8px;align-self:center;background:linear-gradient(135deg,#FFF1C2,#E2B04A);color:#3D2A05;border-radius:99px;padding:6px 14px;font-size:14px;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.gift-strip b{font-weight:900}
+.gift-line{color:#F3D27A;font-weight:800!important;opacity:1!important}
+.gift-card{display:flex;align-items:center;gap:12px;width:100%;text-align:right;background:var(--gold-bg);border:1.5px solid #F0D894;border-radius:16px;padding:14px 16px;color:#5A410C}
+.gift-card .bar-ic{width:30px;height:30px;color:#B07D1E}
+.gift-card b{display:block;font-size:16px;font-weight:900;color:#3D2A05}
+.gift-card span{display:block;font-size:13.5px;line-height:1.8}
+.sure-gift{position:relative;display:flex;align-items:center;gap:14px;border-radius:20px;padding:20px 18px;background:linear-gradient(135deg,#0D2A5B,#0B4A78);color:#fff;border:2px solid #E2B04A;box-shadow:0 12px 28px rgba(13,42,91,.25);margin-bottom:8px}
+.sg-tag{position:absolute;top:-12px;right:18px;background:linear-gradient(135deg,#FFF1C2,#E2B04A);color:#3D2A05;font-size:12.5px;font-weight:900;border-radius:99px;padding:3px 12px}
+.sg-ic{width:58px;height:58px;border-radius:16px;background:linear-gradient(135deg,#FBE3A0,#E2B04A);color:#5A3B05;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.sg-ic .bar-ic{width:32px;height:32px}
+.sg-txt b{display:block;font-size:19px;font-weight:900;color:#F3D27A}
+.sg-txt span{display:block;font-size:14px;line-height:1.8;color:#E3EEF8}
+@media (min-width:960px){
+  .hero .gift-strip{align-self:flex-start;font-size:15.5px;padding:8px 18px}
+  .prizes-sec>.sure-gift{grid-column:1/-1}
+}
+.per-invite{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:transparent;color:var(--navy);border:1.5px dashed #9FB3C9;border-radius:14px;padding:10px 14px;font-size:15px;font-weight:700}
+.per-invite svg{color:var(--teal-dark);flex-shrink:0;width:18px;height:18px}
+.per-invite b{font-size:20px;font-weight:900;color:#B07D1E}
+.go-down{margin:4px 0 -2px;display:block;width:100%;text-align:center;font-size:14px;line-height:1.8;font-weight:700;color:var(--teal-dark)}
+.go-down svg{display:inline-block;vertical-align:middle;margin-inline-start:4px}
+.go-down svg{display:inline-block;vertical-align:middle;animation:nudge 1.4s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+.hero-prize .hp-title{white-space:nowrap;font-size:clamp(15px,4.6vw,20px)}
+@media (max-width:399px){.hero-prize{gap:8px;padding:10px 12px}.hero-prize .hp-coin{width:54px;height:54px}.hero-prize .hp-count{font-size:12px;padding:3px 10px}}
+@media (min-width:960px){.hero-prize .hp-title{font-size:26px}}
+.hero h1 .h1-a{white-space:nowrap;font-size:clamp(21px,6.6vw,31px)}
+@media (min-width:960px){.hero h1 .h1-a{font-size:inherit}}
+.hero h1 .h1-brand{color:#5EF0E1;font-weight:900;padding:0 2px;background:linear-gradient(transparent 68%,rgba(0,194,179,.35) 68%)}
+
+/* ---- animated flame (صندوق آتش) ---- */
+.flame{display:inline-flex;width:18px;height:24px;flex-shrink:0;filter:drop-shadow(0 0 4px rgba(255,120,20,.55))}
+.flame.big{width:30px;height:40px}
+.flame svg{width:100%;height:100%;overflow:visible;transform-origin:50% 95%;animation:flick 1.1s ease-in-out infinite alternate}
+.f-out{fill:#FF6A13}
+.f-in{fill:#FFD34D;transform-origin:50% 90%;animation:flick-in .6s ease-in-out infinite alternate}
+@keyframes flick{0%{transform:scale(1,1) skewX(0)}35%{transform:scale(.96,1.06) skewX(-3deg)}70%{transform:scale(1.03,.97) skewX(2deg)}100%{transform:scale(.98,1.08) skewX(-1deg)}}
+@keyframes flick-in{0%{transform:scale(1,1)}100%{transform:scale(.9,1.12) translateY(-1px)}}
+.hero h1 .gold-text{display:inline-block}
+.hero h1 .h1-b{white-space:nowrap}
+@media (max-width:520px){.hero h1 .h1-b{font-size:clamp(20px,6.5vw,31px)}.hero h1 .h1-b .gold-text{font-size:1.12em}}
+.hero-prize .hp-title{white-space:normal!important;line-height:1.4}
+@media (min-width:960px){.hero h1 .h1-b .gold-text{font-size:42px}}
+@media (min-width:1280px){.hero h1 .h1-b .gold-text{font-size:46px}}
+.pz-silver{background:#F2F5F9;border:1.5px solid #C9D3DF}
+.pz-silver .pz-ic{background:linear-gradient(135deg,#FFFFFF,#B8C2CF)}
+.pz-silver .pz-ic svg{stroke:#4A5568}
+.pz-silver .pz-val,.pz-silver .pz-txt span{color:#3A4556}
+.pz-silver .pz-count{background:#4A5568;color:#fff}
+.hero-subs li.hs-silver b{color:#E6EBF2}
+.hero-subs li.hs-silver .hs-ic svg{stroke:#E6EBF2}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF6TNSBT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap">
+
+<header class="top">
+  <a class="brand" href="https://pouyanbroker.ir" target="_blank" rel="noopener" aria-label="کارگزاری پویان">
+    <img class="brand-mark" src="data:image/png;base64,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" alt="" width="40" height="38">
+    <img class="brand-word" src="data:image/png;base64,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" alt="کارگزاری پویان" height="22">
+  </a>
+  <div id="topAction"></div>
+</header>
+
+<div class="stage">
+<section class="hero">
+  <h1><span class="h1-a">دوستاتو به <span class="h1-brand">پویان</span> دعوت کن،</span><br><span class="h1-b"><span class="gold-text">۱۰ گرم طلای صندوق آتش</span> ببر</span></h1>
+  <p class="gift-strip"><span class="flame" aria-hidden="true"><svg viewBox="0 0 24 32"><path class="f-out" d="M12 1C13 7 19 10 19 19a7 7 0 0 1-14 0c0-4 2-6 3-8 .5 2.5 2 3.5 3 3.5C11 11 10 6 12 1z"/><path class="f-in" d="M12 13c.6 3 4 4.5 4 8.5a4 4 0 0 1-8 0c0-2 1-3 1.6-4 .3 1.2 1 1.8 1.6 1.8 0-2 .2-4 .8-6.3z"/></svg></span><span><b>هدیه قطعی:</b> یک واحد صندوق طلای آتش با افتتاح حساب موفق</span></p>
+
+  <div class="hero-prize">
+    <div class="coin-img hp-coin" role="img" aria-label="۱۰ گرم طلای صندوق آتش"></div>
+    <div class="hp-txt">
+      <strong class="hp-title">۱۰ گرم طلای<br>صندوق آتش</strong>
+    </div>
+    <span class="hp-count">جایزه ویژه</span>
+  </div>
+
+  <ul class="hero-subs" aria-label="جوایز دیگر">
+    <li class="hs-silver"><span class="hs-badge">۱۰۰ برنده</span>
+      <i class="hs-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 19.5h19l-2.6-6.5H5.1z"/><path d="M7 13l1.6-5h6.8L17 13"/><path d="M12 3.2v1.6M17.6 4.6l-1 1.2M6.4 4.6l1 1.2"/></svg></i>
+      <span class="hs-name">نقره</span><b>۱۰۰۰ گرم</b></li>
+    <li><span class="hs-badge">۱۰ برنده</span>
+      <i class="hs-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12.6V4.5a1 1 0 0 1 1-1h8.1l8 8a1.5 1.5 0 0 1 0 2.1l-7 7a1.5 1.5 0 0 1-2.1 0z"/><circle cx="8.2" cy="8.2" r="1.4"/><path d="M10.5 15.5l5-5"/></svg></i>
+      <span class="hs-name">تخفیف کارمزد</span><b>۱۰۰٪ یک‌ساله</b></li>
+    <li><span class="hs-badge">۱۰ برنده</span>
+      <i class="hs-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l5.5-5.5 4 4L21 7"/><path d="M15 7h6v6"/></svg></i>
+      <span class="hs-name">اعتبار خرید</span><b>تا ۱۰ میلیارد</b></li>
+  </ul>
+</section>
+
+<main class="card" id="app" aria-live="polite"></main>
+</div>
+
+<div class="duo">
+
+<section class="sec how">
+  <h2>چطور امتیاز بگیرم؟</h2>
+  <div class="step step-hl"><span class="n">۱</span><div><b>افتتاح حساب در پویان</b><span class="d">اگه هنوز مشتری پویان نیستی، ثبت‌نامت رو کامل کن و یه واحد صندوق طلای آتش هم هدیه بگیر.<br>اگه پویانی هستی، با شماره پویانیت وارد شو.</span></div><span class="p">+۱۰۰</span></div>
+  <div class="step"><span class="n">۲</span><div><b>دعوت موفق</b><span class="d">دوستت با لینکت بیاد و شماره‌ش رو تایید کنه.</span></div><span class="p">+۱۰</span></div>
+  <div class="step"><span class="n">۳</span><div><b>افتتاح حساب دوستت</b><span class="d">وقتی ثبت‌نامش کامل بشه؛ خودش هم طلا هدیه می‌گیره.</span></div><span class="p">+۵۰</span></div>
+  <div class="step"><span class="n">۴</span><div><b>امتیازت رو ببین</b><span class="d">هر وقت خواستی، با شماره موبایلت همین‌جا وارد شو.</span></div></div>
+  <p class="hint">هر امتیاز یعنی یه شانس قرعه‌کشی. هر دعوت کامل ۶۰ امتیاز داره. فقط آشناهات رو دعوت کن.</p>
+</section>
+
+<section class="sec prizes-sec" id="prizes">
+  <article class="sure-gift">
+    <span class="sg-tag">بدون قرعه‌کشی</span>
+    <div class="sg-ic"><span class="flame big" aria-hidden="true"><svg viewBox="0 0 24 32"><path class="f-out" d="M12 1C13 7 19 10 19 19a7 7 0 0 1-14 0c0-4 2-6 3-8 .5 2.5 2 3.5 3 3.5C11 11 10 6 12 1z"/><path class="f-in" d="M12 13c.6 3 4 4.5 4 8.5a4 4 0 0 1-8 0c0-2 1-3 1.6-4 .3 1.2 1 1.8 1.6 1.8 0-2 .2-4 .8-6.3z"/></svg></span></div>
+    <div class="sg-txt"><b>یک واحد صندوق طلای آتش</b><span>هدیه قطعی برای هر کسی که ثبت‌نامش رو توی این کمپین کامل کنه.</span></div>
+  </article>
+  <h2>جوایز قرعه‌کشی</h2>
+  <p class="muted" style="margin:-4px 0 0">مهلت شرکت: ۱ تا ۳۰ آبان · قرعه‌کشی تا یه هفته بعد از تموم شدن کمپین</p>
+
+  <article class="pz-main">
+    <span class="pz-ribbon">جایزه ویژه</span>
+    <div class="coin-img pz-coin" role="img" aria-label="۱۰ گرم طلای صندوق آتش"></div>
+    <div class="pz-main-txt">
+      <strong>۱۰ گرم طلای<br>صندوق آتش</strong>
+      <span class="pz-count">۱ برنده خوش‌شانس</span>
+    </div>
+  </article>
+
+  <article class="pz pz-silver">
+    <div class="pz-ic"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#7A520F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19h18l-3-8H6z"/><path d="M7.5 11l1.8-5h5.4l1.8 5"/></svg></div>
+    <div class="pz-txt"><b class="pz-val">۱۰۰۰ <small>گرم</small></b><span>نقره</span></div>
+    <span class="pz-count">۱۰۰ برنده</span>
+  </article>
+
+  <article class="pz pz-teal">
+    <div class="pz-ic"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#08625A" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="2.6"/><circle cx="17" cy="17" r="2.6"/></svg></div>
+    <div class="pz-txt"><b class="pz-val">۱۰۰٪</b><span>تخفیف کارمزد یک‌ساله</span></div>
+    <span class="pz-count">۱۰ برنده</span>
+  </article>
+
+  <article class="pz pz-navy">
+    <div class="pz-ic"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg></div>
+    <div class="pz-txt"><b class="pz-val"><small>تا</small> ۱۰ <small>میلیارد</small></b><span>اعتبار خرید سهام</span></div>
+    <span class="pz-count">۱۰ برنده</span>
+  </article>
+
+  <p class="hint" style="text-align:center"><b>هر امتیاز یعنی یه شانس برای همه جایزه‌ها.</b> امتیاز بیشتر، شانس بیشتر!</p>
+</section>
+
+
+</div>
+
+<section class="sec faq" id="faq">
+  <details class="faq-wrap">
+    <summary class="faq-toggle"><span class="fq-ic" aria-hidden="true">؟</span><span class="fq-txt"><b>سوالات متداول</b><small>برای دیدن جواب‌ها بزن</small></span><span class="fq-chev" aria-hidden="true"></span></summary>
+    <div class="faq-list">
+  <details><summary>کیا می‌تونن توی کمپین شرکت کنن؟</summary><p>همه! مشتری‌های پویان بعد از ورود مستقیم می‌رن صفحه دعوت. اگه هنوز مشتری پویان نیستی، می‌تونی دوستات رو دعوت کنی یا ثبت‌نامت رو کامل کنی و ۱۰۰ امتیاز هدیه بگیری.</p></details>
+  <details><summary>امتیاز چطوری حساب می‌شه؟</summary><p>هر بار دوستت با لینک تو بیاد و شماره‌ش رو تایید کنه، ۱۰ امتیاز می‌گیری. وقتی ثبت‌نامش توی کارگزاری کامل بشه، ۵۰ امتیاز دیگه هم بهت می‌رسه. اگه خودت هنوز مشتری پویان نیستی، با تکمیل ثبت‌نام ۱۰۰ امتیاز هدیه می‌گیری. هر امتیاز یه شانس توی قرعه‌کشی حساب می‌شه.</p></details>
+  <details><summary>هدیه صندوق آتش به همه تعلق می‌گیره؟</summary><p>اگه افتتاح حسابت رو توی کارگزاری پویان کامل کنی، یه واحد صندوق طلای آتش بهت هدیه داده می‌شه.</p></details>
+  <details><summary>هدیه طلا چیه و کی به حسابم می‌رسه؟</summary><p>هر کسی ثبت‌نامش رو توی این کمپین کامل کنه، بدون قرعه‌کشی یه واحد صندوق طلای آتش هدیه می‌گیره. این هدیه تا دو روز کاری بعد از تکمیل ثبت‌نام به حسابت توی کارگزاری پویان واریز می‌شه و می‌تونی نگهش داری یا بفروشیش.</p></details>
+  <details><summary>اعتبار خرید چطوری داده می‌شه؟</summary><p>مبلغ این جایزه تا ۱۰ میلیارده. اعتبار در نهایت بر اساس تضامین و شرایط اعطای اعتبار تخصیص داده خواهد شد.</p></details>
+  <details><summary>امتیازم رو کجا ببینم؟</summary><p>هر وقت خواستی، بیا همین صفحه و با شماره موبایلت وارد شو. امتیازت و وضعیت همه دوستایی که دعوت کردی همین‌جا نشون داده می‌شه. لینک این صفحه توی پیامک کمپین هم هست.</p></details>
+  <details><summary>چطوری دوستام رو دعوت کنم؟</summary><p>توی صفحه دعوت، شماره موبایل دوستت رو بزن تا پیامک دعوت براش بره. لینک اختصاصیت رو هم می‌تونی کپی کنی و براش بفرستی.</p></details>
+  <details><summary>سقفی برای تعداد دعوت هست؟</summary><p>از این صفحه می‌تونی برای حداکثر ۱۰۰ نفر پیامک دعوت بفرستی. لینک اختصاصیت رو هم می‌تونی خودت برای آشناهات بفرستی؛ امتیاز همه کسایی که با لینک تو بیان برات حساب می‌شه.</p></details>
+  <details><summary>کیا رو دعوت کنم؟</summary><p>فقط آشناهات رو؛ یعنی خانواده، دوستا و همکارات. لطفا برای آدمای ناآشنا پیامک نفرست؛ دعوت‌هایی که به شماره‌های ناشناس بره ممکنه از کمپین حذف بشه.</p></details>
+  <details><summary>اگه کسی که دعوت کردم از قبل مشتری پویان باشه چی می‌شه؟</summary><p>اون‌وقت امتیازی بهت نمی‌رسه. امتیاز دعوت فقط برای مشتری‌های جدید حساب می‌شه.</p></details>
+  <details><summary>می‌تونم بیشتر از یه جایزه ببرم؟</summary><p>نه. برای اینکه آدمای بیشتری برنده بشن، هر نفر حداکثر یه جایزه می‌بره.</p></details>
+  <details><summary>قرعه‌کشی کی و چطوری برگزار می‌شه؟</summary><p>قرعه‌کشی حداکثر تا یه هفته بعد از تموم شدن کمپین (۳۰ آبان) برگزار می‌شه و نتیجه‌ش با پیامک و توی شبکه‌های اجتماعی پویان اعلام می‌شه.</p></details>
+  <details><summary>جایزه‌ها رو چطوری تحویل می‌دید؟</summary><p>بعد از قرعه‌کشی، همکارامون با برنده‌ها تماس می‌گیرن و برای تحویل جایزه باهاشون هماهنگ می‌کنن.</p></details>
+    </div>
+  </details>
+</section>
+
+<section class="sec" id="rules">
+  <h2 style="font-size:17px">قوانین قرعه‌کشی</h2>
+  <ul class="rules">
+    <li>مهلت شرکت توی کمپین از ۱ تا ۳۰ آبانه.</li>
+    <li>قرعه‌کشی حداکثر تا یه هفته بعد از تموم شدن مهلت برگزار می‌شه.</li>
+    <li>امتیاز فقط برای دعوت از کسایی حساب می‌شه که قبلا مشتری کارگزاری نبودن.</li>
+    <li>هر امتیاز یعنی یه شانس قرعه‌کشی.</li>
+    <li>هر نفر حداکثر یه جایزه می‌بره.</li>
+    <li>هدیه صندوق طلای آتش فقط یه بار و بعد از تکمیل ثبت‌نام توی این کمپین به هر نفر داده می‌شه و جدا از جایزه‌های قرعه‌کشیه.</li>
+    <li>هر نفر از این صفحه حداکثر ۱۰۰ پیامک دعوت می‌تونه بفرسته.</li>
+    <li>دعوت فقط باید برای آشناها فرستاده بشه؛ فرستادن پیامک به آدمای ناآشنا مجاز نیست.</li>
+  </ul>
+</section>
+
+<footer class="foot">
+  <span style="font-size:14px;font-weight:700">ما رو توی شبکه‌های اجتماعی دنبال کن</span>
+  <nav class="social" aria-label="شبکه‌های اجتماعی">
+    <a href="https://www.instagram.com/poyanbroker/" target="_blank" rel="noopener" aria-label="اینستاگرام"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><span>اینستاگرام</span></a>
+    <a href="[TELEGRAM_URL]" target="_blank" rel="noopener" aria-label="تلگرام"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/><path d="M9 13l12-9"/></svg><span>تلگرام</span></a>
+    <a href="https://ble.ir/pouyanbrokerage" target="_blank" rel="noopener" aria-label="بله"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.8A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 11.5l2.5 2.5 4.5-4.5"/></svg><span>بله</span></a>
+  </nav>
+  <div class="meta">
+    <a href="https://pouyanbroker.ir" target="_blank" rel="noopener">pouyanbroker.ir</a>
+    <span>تلفن: <a class="tel" href="tel:02191005777" dir="ltr">۰۲۱-۹۱۰۰۵۷۷۷</a></span>
+    <span>© کارگزاری پویان</span>
+  </div>
+</footer>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* =========================================================
+   API — نسخه نمایشی (Mock)
+   تیم فنی: فقط بدنه این توابع را با فراخوانی endpointهای واقعی عوض کنید.
+   همه توابع Promise برمی‌گردانند.
+   منطق نمایشی:
+   - 09111111111 → مشتری فعلی کارگزاری (مستقیم به صفحه دعوت)
+   - 09122222222 (و هر شماره دیگر) → مشتری جدید
+   - هر کد ۵ رقمی به‌عنوان OTP پذیرفته می‌شود.
+   - ۵ ثانیه بعد از هر دعوت، فرد دعوت‌شده «ثبت‌نام کامل» می‌شود و ۶۰ امتیاز (۱۰ + ۵۰) به دعوت‌کننده می‌رسد.
+   ========================================================= */
+const CONTRACT_URL = '[CONTRACT_URL]';   // لینک فایل/صفحه قرارداد
+const DEMO_CUSTOMERS = ['09111111111'];
+const SMS_LIMIT = 100;   // سقف پیامک دعوت برای هر نفر
+const DEMO_REG_DELAY = 5000;
+const POINTS = { verified: 10, registered: 50, selfRegister: 100 };
+const friendPts = i => i.status === 'sent' ? 0 : POINTS.verified + (i.status === 'full' ? POINTS.registered : 0);
+const calcPoints = () => (state.registered ? POINTS.selfRegister : 0) + state.invites.reduce((a, i) => a + friendPts(i), 0);
+const API = {
+  wait: (ms = 700) => new Promise(r => setTimeout(r, ms)),
+  async sendLoginOtp(phone)            { await this.wait(); return { ok: true }; },
+  async verifyLoginOtp(phone, code)    { await this.wait(); return { ok: code.length === 5, isCustomer: DEMO_CUSTOMERS.includes(phone) }; },
+  async requestSejamOtp(nationalId)    { await this.wait(); return { ok: true }; },
+  async verifySejamOtp(nationalId, c)  { await this.wait(); return { ok: c.length === 5 }; },
+  async requestContractOtp()           { await this.wait(500); return { ok: true }; },
+  async signContract(code)             { await this.wait(); return { ok: code.length === 5, bonus: POINTS.selfRegister }; },
+  async sendInviteSms(fromPhone, to)   { await this.wait(); return { ok: true }; },
+  async getInvites(phone)              { return { invites: state.invites, points: calcPoints() }; },
+  async logout()                       { return { ok: true }; }
+};
+
+/* ---------- helpers ---------- */
+const FA = '۰۱۲۳۴۵۶۷۸۹';
+const toFa = v => String(v).replace(/\d/g, d => FA[d]);
+const toEn = v => String(v || '').replace(/[۰-۹]/g, d => FA.indexOf(d)).replace(/[٠-٩]/g, d => d.charCodeAt(0) - 1632).replace(/\D/g, '');
+const validPhone = p => /^09\d{9}$/.test(p);
+const validNid = n => {
+  if (!/^\d{10}$/.test(n) || /^(\d)\1{9}$/.test(n)) return false;
+  const c = +n[9], s = [...n.slice(0, 9)].reduce((a, d, i) => a + d * (10 - i), 0) % 11;
+  return s < 2 ? c === s : c === 11 - s;
+};
+const mask = p => p.slice(0, 4) + '***' + p.slice(-4);
+const $ = s => document.querySelector(s);
+const app = $('#app');
+
+const ICON = {
+  check: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0A6B8A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+  shield: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8A5F10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>',
+  info: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0A6B8A" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>',
+  logout: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3"/><path d="M10 17l-5-5 5-5"/><path d="M5 12h11"/></svg>',
+  user: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>',
+  users: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0A6B8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18 14a6.5 6.5 0 0 1 3.5 6"/></svg>',
+  sms: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>',
+  wa: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.6-4.8A9 9 0 1 1 8 19.6z"/><path d="M9 10c.5 2 2 3.5 4 4"/></svg>',
+  tg: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/><path d="M9 13l12-9"/></svg>',
+  coin: '<svg class="coin" width="76" height="76" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="gc3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBE3A0"/><stop offset=".6" stop-color="#E2B04A"/><stop offset="1" stop-color="#B07D1E"/></linearGradient></defs><circle cx="32" cy="32" r="28" fill="url(#gc3)"/><circle cx="32" cy="32" r="21" fill="none" stroke="#FFF3CC" stroke-width="1.5" stroke-dasharray="2 3"/></svg>'
+};
+
+/* ---------- state ---------- */
+const STORE = 'pouyan_invite_v1';
+const blank = () => ({ screen: 'phone', phone: '', isCustomer: false, registered: false, points: 0, invites: [], nid: '' });
+let state = blank();
+try { const s = JSON.parse(localStorage.getItem(STORE)); if (s && s.phone) state = Object.assign(blank(), s); } catch (e) {}
+// صفحات میانی (OTP) بعد از رفرش به صفحه مناسب برمی‌گردند
+if (['otp'].includes(state.screen)) state.screen = 'phone';
+
+const save = () => { try { localStorage.setItem(STORE, JSON.stringify(state)); } catch (e) {} };
+const go = (screen, patch = {}) => { Object.assign(state, patch, { screen }); save(); render(); };
+const loggedIn = () => ['choice', 'nid', 'sejam', 'contract', 'done', 'invite'].includes(state.screen);
+
+let timer = 0, timerId = null;
+const startTimer = () => {
+  timer = 120; clearInterval(timerId);
+  timerId = setInterval(() => { timer--; paintTimer(); if (timer <= 0) clearInterval(timerId); }, 1000);
+};
+const paintTimer = () => {
+  const el = $('#timer'); if (!el) return;
+  el.innerHTML = timer > 0
+    ? `<span class="muted">ارسال دوباره تا ${toFa(Math.floor(timer / 60))}:${toFa(String(timer % 60).padStart(2, '0'))}</span>`
+    : `<button type="button" class="link-btn" data-act="resend" style="color:#0A6B8A">ارسال دوباره کد</button>`;
+};
+
+let toastId;
+const toast = msg => { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toastId); toastId = setTimeout(() => t.classList.remove('show'), 2600); };
+
+const setErr = msg => { const e = app.querySelector('.err'); if (e) e.textContent = msg; };
+const busy = (btn, on) => { if (!btn) return; btn.disabled = on; if (on) { btn.dataset.label = btn.innerHTML; btn.innerHTML = '<span class="spin"></span>'; } else if (btn.dataset.label) btn.innerHTML = btn.dataset.label; };
+
+const progress = n => `<div class="prog"><div class="row muted" style="font-size:12px"><span>تکمیل ثبت‌نام</span><span>مرحله ${toFa(n)} از ۳</span></div><div class="prog-bar"><i style="width:${Math.round(n / 3 * 100)}%"></i></div></div>`;
+const otpField = (id, label) => `<label class="l" for="${id}">${label}</label><input id="${id}" class="field otp" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="5" placeholder="- - - - -">`;
+
+/* ---------- screens ---------- */
+const SCREENS = {
+  phone: () => `
+    <h2>ورود به قرعه‌کشی</h2>
+    <p class="lead">شماره موبایلت رو بزن تا کد تایید برات پیامک بشه. اگه قبلا شرکت کردی، با همین شماره وارد شو تا امتیازت رو ببینی.</p>
+    <form data-form="phone" novalidate style="display:flex;flex-direction:column;gap:14px">
+      <label class="l" for="phone">شماره موبایل</label>
+      <input id="phone" class="field" type="tel" inputmode="numeric" autocomplete="tel" maxlength="11" placeholder="09xxxxxxxxx" value="${state.phone}">
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit">دریافت کد تایید</button>
+    </form>`,
+
+  otp: () => `
+    <h2>کد تایید رو وارد کن</h2>
+    <p class="lead">کد ۵ رقمی برای شماره <b dir="ltr">${toFa(state.phone)}</b> پیامک شد.</p>
+    <form data-form="otp" novalidate style="display:flex;flex-direction:column;gap:14px">
+      ${otpField('otp', 'کد تایید')}
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit">تایید و ورود</button>
+    </form>
+    <div class="row"><button type="button" class="link-btn" data-act="editPhone">ویرایش شماره</button><span id="timer"></span></div>`,
+
+  choice: () => `
+    <div class="hello"><div class="ok">${ICON.check}</div><h2>وارد شدی!</h2></div>
+    <div><p class="lead" style="margin:0">هنوز مشتری کارگزاری پویان نیستی. افتتاح حساب کن، ۱۰۰ امتیاز قرعه‌کشی بگیر و یه واحد صندوق طلای آتش هدیه ببر.</p><p class="muted" style="margin:4px 0 0;font-size:12.5px">(اگه مشتری پویان هستی، فقط دوستات رو دعوت کن)</p></div>
+    <div class="choice">
+      <button type="button" class="opt primary" data-act="startReg">
+        <span class="ic">${ICON.user}</span>
+        <span><b>تکمیل ثبت‌نام و دریافت ۱۰۰ امتیاز</b><small class="gift-line">+ یه واحد صندوق طلای آتش هدیه</small><small>با کد ملی و سجام، توی نیم دقیقه</small></span>
+        <span class="badge-100"><b>+۱۰۰</b><small>امتیاز</small></span>
+      </button>
+      <button type="button" class="opt" data-act="toInvite">
+        <span class="ic">${ICON.users}</span>
+        <span><b>دعوت دوستان</b><small>با هر دعوت کامل ۶۰ امتیاز بگیر</small></span>
+      </button>
+    </div>`,
+
+  nid: () => `
+    ${progress(1)}
+    <h2>کد ملی</h2>
+    <p class="lead">کد ملیت رو بزن تا اطلاعاتت از سجام گرفته بشه.</p>
+    <form data-form="nid" novalidate style="display:flex;flex-direction:column;gap:14px">
+      <label class="l" for="nid">کد ملی</label>
+      <input id="nid" class="field" type="text" inputmode="numeric" maxlength="10" placeholder="۱۰ رقم" value="${state.nid}">
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit">دریافت کد سجام</button>
+    </form>
+    <button type="button" class="link-btn" data-act="toChoice" style="align-self:flex-start">بازگشت</button>`,
+
+  sejam: () => `
+    ${progress(2)}
+    <h2>کد تایید سجام</h2>
+    <p class="lead">کدی که سجام برای شماره ثبت‌شده‌ت فرستاده رو وارد کن.</p>
+    <form data-form="sejam" novalidate style="display:flex;flex-direction:column;gap:14px">
+      ${otpField('sotp', 'کد سجام')}
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit">تایید و گرفتن اطلاعات</button>
+    </form>
+    <div class="row"><button type="button" class="link-btn" data-act="toNid">ویرایش کد ملی</button><span id="timer"></span></div>
+    <p class="muted" style="margin:0;font-size:12px">توی سجام ثبت‌نام نکردی؟ <a href="https://profilesejam.csdiran.ir" target="_blank" rel="noopener">ثبت‌نام در سجام</a></p>`,
+
+  contract: () => `
+    ${progress(3)}
+    <h2>قرارداد آنلاین</h2>
+    <a class="contract-link" href="${CONTRACT_URL}" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg>
+      مشاهده قرارداد
+    </a>
+    <p class="lead">برای امضای قرارداد، کد ۵ رقمی‌ای که به <b dir="ltr">${toFa(state.phone)}</b> فرستادیم رو وارد کن.</p>
+    <form data-form="contract" novalidate style="display:flex;flex-direction:column;gap:14px">
+      ${otpField('cotp', 'کد امضای قرارداد')}
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit">امضا و پایان ثبت‌نام</button>
+    </form>
+    <div class="row"><span></span><span id="timer"></span></div>`,
+
+  done: () => `
+    <div class="done">
+      <div class="done-ic"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <h2 style="font-size:21px;font-weight:900">ثبت‌نامت کامل شد!</h2>
+      <div class="plus100">+۱۰۰ امتیاز</div>
+      <div class="gift-card"><svg class="bar-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 19.5h19l-2.6-6.5H5.1z"/><path d="M7 13l1.6-5h6.8L17 13"/></svg><div><b>یک واحد صندوق طلای آتش</b><span>هدیه‌ت تا دو روز کاری به حسابت توی پویان واریز می‌شه.</span></div></div>
+      <div class="per-invite"><span>هر دعوت موفق</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M11 6l-6 6 6 6"/></svg><b>۶۰ امتیاز</b></div>
+      <p class="go-down">برای شرکت در قرعه‌کشی از دکمه زیر دوستات رو دعوت کن<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M6 13l6 6 6-6"/></svg></p>
+      <button type="button" class="btn" data-act="toInvite">دعوت دوستان</button>
+    </div>`,
+
+  invite: () => {
+    const code = 'PY' + state.phone.slice(-6);
+    const link = 'https://pouyanbroker.ir/i/' + code;
+    const text = encodeURIComponent('سلام! با لینک من توی کارگزاری پویان ثبت‌نام کن؛ یه واحد صندوق طلای آتش هدیه می‌گیری و توی قرعه‌کشی ۱۰ گرم طلای صندوق آتش هم شرکت می‌کنی: ' + link);
+    const notReg = !state.isCustomer && !state.registered;
+    const smsLeft = Math.max(0, SMS_LIMIT - state.invites.length);
+    const list = state.invites.length
+      ? `<ul class="inv-list">${state.invites.map(i => `
+          <li data-phone="${i.phone}"><div><div class="num">${toFa(mask(i.phone))}</div>
+          <span class="tag ${i.status}">${{ sent: 'پیامک ارسال شد', half: 'شماره تایید شد', full: 'ثبت‌نام کامل' }[i.status]}</span></div>
+          <span class="pts">${i.status === 'sent' ? '<span class="muted" style="font-weight:700">در انتظار</span>' : '+' + toFa(friendPts(i))}</span></li>`).join('')}</ul>`
+      : `<div class="empty">هنوز کسی رو دعوت نکردی.<br>شماره اولین دوستت رو بالا وارد کن.</div>`;
+    return `
+      <div class="hello"><div class="ok">${ICON.check}</div><div><h2>وارد شدی!</h2><p class="lead" style="margin:0">حالا با هر دعوت تا ۶۰ امتیاز بگیر.</p></div></div>
+      <div class="score"><div><small>امتیاز تو (شانس قرعه‌کشی)</small><strong>${toFa(calcPoints())}</strong></div>${ICON.coin}</div>
+      ${notReg ? `<div class="upsell"><p><b>۱۰۰ امتیاز + طلای هدیه منتظرته!</b><br>ثبت‌نامت رو کامل کن و یه واحد صندوق طلای آتش بگیر.</p><button type="button" data-act="startReg">تکمیل ثبت‌نام</button></div>` : ''}
+      <div class="note">${ICON.info}<p><b>امتیازت همیشه همین‌جاست.</b> هر وقت خواستی، دوباره بیا همین صفحه و با شماره <b dir="ltr">${toFa(state.phone)}</b> وارد شو تا امتیاز و وضعیت دوستات رو ببینی. لینک این صفحه توی پیامک کمپین هم هست.</p></div>
+      <div class="row"><h3 class="sec-title">دعوت با شماره موبایل</h3><span class="sms-left${smsLeft ? '' : ' none'}">${toFa(smsLeft)} پیامک از ${toFa(SMS_LIMIT)} باقی مونده</span></div>
+      <div class="warn">${ICON.shield}<p><b>فقط آشناهات رو دعوت کن.</b> شماره خانواده، دوستا و همکارات رو بزن و برای آدمای ناآشنا پیامک نفرست.</p></div>
+      <form data-form="invite" novalidate style="display:flex;flex-direction:column;gap:8px">
+        <label class="l" for="friend" style="font-weight:500;color:var(--muted)">پیامک دعوت با لینک اختصاصی تو براش می‌ره. اگه ثبت‌نام کنه، خودش هم طلا هدیه می‌گیره.</label>
+        <div class="inv-form"><input id="friend" class="field" type="tel" inputmode="numeric" maxlength="11" placeholder="09xxxxxxxxx"${smsLeft ? '' : ' disabled'}><button class="btn" type="submit"${smsLeft ? '' : ' disabled'}>ارسال دعوت</button></div>
+        ${smsLeft ? '' : '<p class="muted" style="margin:0;font-size:12.5px">به سقف ۱۰۰ پیامک دعوت رسیدی. هنوز می‌تونی لینک اختصاصیت رو برای آشناهات بفرستی.</p>'}
+        <p class="err" role="alert"></p>
+      </form>
+      <div class="divider">یا لینکت رو برای آشناهات بفرست</div>
+      <div class="linkbox"><code>${link.replace('https://', '')}</code><button type="button" data-act="copy" data-link="${link}">کپی لینک</button></div>
+      <div class="row"><h3 class="sec-title">دعوت‌شده‌ها</h3><span class="muted">${toFa(state.invites.length)} نفر</span></div>
+      ${list}`;
+  }
+};
+
+/* ---------- آنالیتیکس: فقط نام رویداد، بدون هیچ اطلاعات شخصی ---------- */
+function track(event, params) {
+  try { window.dataLayer.push(Object.assign({ event: event }, params || {})); } catch (e) {}
+  // کلریتی: رویداد برای فیلتر کردن ضبط‌ها + برچسب‌ها
+  try {
+    if (window.clarity) {
+      window.clarity('event', event);
+      Object.keys(params || {}).forEach(k => window.clarity('set', k, String(params[k])));
+    }
+  } catch (e) {}
+}
+try { if (window.clarity) window.clarity('set', 'page_variant', document.documentElement.dataset.variant || ''); } catch (e) {}
+let lastTrackedScreen = null;
+
+function render() {
+  app.innerHTML = SCREENS[state.screen]();
+  if (state.screen !== lastTrackedScreen) { lastTrackedScreen = state.screen; track('campaign_screen', { screen_name: state.screen }); }
+  $('#topAction').innerHTML = loggedIn()
+    ? `<button type="button" class="logout" data-act="logout">${ICON.logout} خروج</button>`
+    : '';
+  if (['otp', 'sejam', 'contract'].includes(state.screen)) paintTimer();
+  // صفحه اول خودکار فوکوس نمی‌گیرد تا کاربر اول هیرو و جوایز را ببیند
+  const first = app.querySelector('input.field');
+  if (first && !['phone', 'invite'].includes(state.screen)) first.focus({ preventScroll: true });
+}
+
+/* ---------- موبایل: با باز شدن کیبورد، فرم بالا بیاید تا دکمه دیده شود ---------- */
+const HEADER_H = 80; // ارتفاع هدر + کمی فاصله
+function bringIntoView(el) {
+  if (window.matchMedia('(min-width: 960px)').matches) return;
+  // کل کارت (با عنوان) زیر هدر قرار می‌گیرد؛ فقط در صفحه دعوت که کارت بلند است، خود فرم دعوت
+  const target = state.screen === 'invite' ? (el.closest('form') || el) : app;
+  const y = target.getBoundingClientRect().top + window.scrollY - HEADER_H;
+  window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+}
+app.addEventListener('focusin', e => {
+  if (!e.target.matches('input.field')) return;
+  bringIntoView(e.target);
+  setTimeout(() => { if (document.activeElement === e.target) bringIntoView(e.target); }, 350); // بعد از باز شدن کیبورد
+});
+if (window.visualViewport) {
+  let vvT;
+  visualViewport.addEventListener('resize', () => {
+    clearTimeout(vvT);
+    vvT = setTimeout(() => {
+      const a = document.activeElement;
+      if (a && a.matches && a.matches('#app input.field')) bringIntoView(a);
+    }, 120);
+  });
+}
+
+/* ---------- inputs: فقط عدد (پشتیبانی از ارقام فارسی) ---------- */
+app.addEventListener('input', e => {
+  if (e.target.classList.contains('field')) {
+    const v = toEn(e.target.value).slice(0, +e.target.maxLength || 20);
+    if (e.target.value !== v) e.target.value = v;
+  }
+});
+
+/* ---------- forms ---------- */
+app.addEventListener('submit', async e => {
+  e.preventDefault();
+  const f = e.target.dataset.form, btn = e.target.querySelector('[type=submit]');
+  setErr('');
+
+  if (f === 'phone') {
+    const p = $('#phone').value;
+    if (!validPhone(p)) return setErr('شماره موبایل باید ۱۱ رقم باشه و با ۰۹ شروع بشه.');
+    busy(btn, true); await API.sendLoginOtp(p);
+    state.phone = p; startTimer(); track('login_start'); go('otp');
+  }
+
+  if (f === 'otp') {
+    const c = $('#otp').value;
+    if (c.length !== 5) return setErr('کد تایید ۵ رقمی رو کامل وارد کن.');
+    busy(btn, true); const r = await API.verifyLoginOtp(state.phone, c); busy(btn, false);
+    if (!r.ok) return setErr('کد واردشده درست نیست.');
+    clearInterval(timerId);
+    track('login_success', { customer_type: r.isCustomer ? 'customer' : 'new' });
+    go(r.isCustomer ? 'invite' : 'choice', { isCustomer: r.isCustomer });
+  }
+
+  if (f === 'nid') {
+    const n = $('#nid').value;
+    if (!validNid(n)) return setErr('کد ملی رو درست وارد کن.');
+    busy(btn, true); await API.requestSejamOtp(n);
+    startTimer(); track('nid_submitted'); go('sejam', { nid: n });
+  }
+
+  if (f === 'sejam') {
+    const c = $('#sotp').value;
+    if (c.length !== 5) return setErr('کد سجام ۵ رقمی رو کامل وارد کن.');
+    busy(btn, true); const r = await API.verifySejamOtp(state.nid, c); busy(btn, false);
+    if (!r.ok) return setErr('کد سجام درست نیست.');
+    busy(btn, true); await API.requestContractOtp();
+    startTimer(); track('sejam_verified'); go('contract'); toast('کد امضای قرارداد پیامک شد');
+  }
+
+  if (f === 'contract') {
+    const c = $('#cotp').value;
+    if (c.length !== 5) return setErr('کد امضای ۵ رقمی رو کامل وارد کن.');
+    busy(btn, true); const r = await API.signContract(c); busy(btn, false);
+    if (!r.ok) return setErr('کد امضا درست نیست.');
+    clearInterval(timerId);
+    track('sign_up', { method: 'campaign' });
+    go('done', { registered: true });
+  }
+
+  if (f === 'invite') {
+    const inp = $('#friend'), to = inp.value;
+    if (!validPhone(to)) return setErr('شماره موبایل دوستت رو درست وارد کن.');
+    if (to === state.phone) return setErr('نمی‌تونی خودت رو دعوت کنی!');
+    if (state.invites.some(i => i.phone === to)) return setErr('این شماره رو قبلا دعوت کردی.');
+    if (state.invites.length >= SMS_LIMIT) return setErr('به سقف ۱۰۰ پیامک دعوت رسیدی.');
+    busy(btn, true); const r = await API.sendInviteSms(state.phone, to); busy(btn, false);
+    if (!r.ok) return setErr('پیامک ارسال نشد؛ دوباره امتحان کن.');
+    state.invites.unshift({ phone: to, status: 'sent', at: Date.now() });
+    track('invite_sent', { invites_total: state.invites.length });
+    save(); render(); toast('پیامک دعوت برای ' + toFa(mask(to)) + ' ارسال شد');
+    simulateRegistration(state.phone, to);
+  }
+});
+
+/* ---------- شبیه‌سازی ثبت‌نام دوست دعوت‌شده (فقط نسخه نمایشی) ----------
+   در نسخه واقعی، سرور وضعیت را برمی‌گرداند و صفحه با getInvites به‌روز می‌شود. */
+function simulateRegistration(owner, friend) {
+  setTimeout(() => {
+    if (state.phone !== owner) return;                 // کاربر خارج شده
+    const inv = state.invites.find(i => i.phone === friend && i.status !== 'full');
+    if (!inv) return;
+    const before = calcPoints();
+    inv.status = 'full';
+    const gained = calcPoints() - before;
+    save();
+    if (state.screen === 'invite') {
+      render();
+      const s = app.querySelector('.score strong'); if (s) s.classList.add('bump');
+      const li = app.querySelector(`[data-phone="${friend}"]`); if (li) li.classList.add('flash');
+    }
+    toast(toFa(mask(friend)) + ' ثبت‌نامش رو کامل کرد! +' + toFa(gained) + ' امتیاز');
+  }, DEMO_REG_DELAY);
+}
+// دعوت‌هایی که قبل از رفرش در انتظار بودند
+state.invites.filter(i => i.status !== 'full').forEach(i => simulateRegistration(state.phone, i.phone));
+
+/* ---------- buttons ---------- */
+
+document.addEventListener('click', async e => {
+  const b = e.target.closest('[data-act]'); if (!b) return;
+  const a = b.dataset.act;
+  if (a === 'editPhone') { clearInterval(timerId); go('phone'); }
+  if (a === 'resend') {
+    if (state.screen === 'sejam') await API.requestSejamOtp(state.nid);
+    else if (state.screen === 'contract') await API.requestContractOtp();
+    else await API.sendLoginOtp(state.phone);
+    startTimer(); paintTimer(); toast('کد دوباره فرستاده شد');
+  }
+  if (a === 'startReg') { track('reg_start', { from_screen: state.screen }); go('nid'); }
+  if (a === 'toChoice') go(state.isCustomer ? 'invite' : 'choice');
+  if (a === 'toNid') { clearInterval(timerId); go('nid'); }
+  if (a === 'toInvite') { if (state.screen === 'choice') track('choose_invite_only'); go('invite'); }
+  if (a === 'copy') {
+    track('invite_link_copy');
+    try { await navigator.clipboard.writeText(b.dataset.link); } catch (err) {
+      const t = document.createElement('textarea'); t.value = b.dataset.link; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); } catch (x) {} t.remove();
+    }
+    b.textContent = 'کپی شد ✓'; setTimeout(() => b.textContent = 'کپی لینک', 2000);
+  }
+  if (a === 'logout') {
+    track('logout');
+    await API.logout(); clearInterval(timerId);
+    try { localStorage.removeItem(STORE); } catch (err) {}
+    state = blank(); render(); window.scrollTo({ top: 0 }); toast('از حساب خارج شدی');
+  }
+});
+
+const faqWrap = document.querySelector('.faq-wrap');
+if (faqWrap) faqWrap.addEventListener('toggle', () => { if (faqWrap.open) track('faq_open'); });
+document.querySelectorAll('.faq-list details').forEach(d => d.addEventListener('toggle', () => {
+  if (d.open) track('faq_question_open', { question: d.querySelector('summary').textContent.trim() });
+}));
+
+render();
+</script>
+</body>
+</html>
